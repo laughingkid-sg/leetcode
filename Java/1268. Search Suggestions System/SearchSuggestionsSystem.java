@@ -2,12 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class TrieNode {
-    TrieNode[] child = new TrieNode[26];
-    List<Integer> vals = new ArrayList<>();
-}
-
-class Solution {
+class SearchSuggestionsSystem {
     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
         
         Arrays.sort(products); // lexicographically sort ~ O(nlogn)
@@ -52,6 +47,10 @@ class Solution {
     }
 }
 
+class TrieNode {
+    TrieNode[] child = new TrieNode[26];
+    List<Integer> vals = new ArrayList<>();
+}
 
 
 
